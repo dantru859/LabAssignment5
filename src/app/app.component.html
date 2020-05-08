@@ -6,9 +6,10 @@
 
 <body>
   <div class="app-container-grid">
-    <main-header></main-header>
-    <main-content></main-content>
-    <main-footer></main-footer>
+    <app-main-header></app-main-header>
+    <app-main-content></app-main-content>
+    <routeer-outlet class="main-outlet"></routeer-outlet>
+    <app-main-footer></app-main-footer>
     <!--<header class="main-header">
       <span class="align-center">r1c1</span>
       <div id="banner" class="align-center" (mouseenter)="showGreeting()" (mouseleave)="hideGreeting()">r1c2</div>

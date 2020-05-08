@@ -1,8 +1,47 @@
-.app-container-grid {
+
+
+.main-outlet {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .app-container-grid {
       display: grid;
       grid-template-rows: 1fr 7fr 1fr;
       height: 100vh;
-    }
+    } */
     
     /*.main-header,
     .main-footer {
@@ -20,3 +59,4 @@
       margin: 15px;
       border: 1px dashed #CCC;
     }*/
+
