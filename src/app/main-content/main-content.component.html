@@ -6,12 +6,12 @@
     <!-- <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-success">Success</button> -->
-    <button type="button" class="btn btn-danger">Danger</button>
+    <!-- <button type="button" class="btn btn-danger">Danger</button> -->
     <!-- <button type="button" class="btn btn-warning">Warning</button>
     <button type="button" class="btn btn-info">Info</button>
     <button type="button" class="btn btn-light">Light</button>
     <button type="button" class="btn btn-dark">Dark</button> -->
-
+    
   <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -21,11 +21,13 @@
           <th scope="col">Courses</th>
           <th>
             <div class="btn-group pull-right">
-              <button type="button" class="btn btn-success" (click)="saveStudent()">Save</button>
-              <button type="button" class="btn btn-info" [disable]="disableAddButton" (click)="addStudent()">Add</button>
-
+              <button type="button" mat-raised-button color="accents" (click)="saveStudent()">
+                <mat-icon>save_edit</mat-icon>
+              </button>
+              <button type="button" mat-raised-button color="warn" [disable]="disableAddButton" (click)="addStudent()">
+                <mat-icon>create</mat-icon>
+              </button>
             </div>
-
           </th>
         </tr>
       </thead>
@@ -54,7 +56,10 @@
           <td>{{ student.lastName }}</td>
           <td>{{ student.course }}</td>
 
-          <td><button type="button" class="btn btn-danger pull-right" (click)="removeStudent(i)">X</button></td>
+          <td>
+            <button type="button" class="pull-right" mat-raised-button color="warn" (click)="removeStudent(i)">
+              <mat-icon>delete_sweep</mat-icon>
+            </button></td>
         </tr>
       </tbody>
     </table>
